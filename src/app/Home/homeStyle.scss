@@ -1,0 +1,138 @@
+.main_home {
+    max-width: 1217px;
+    margin: 0 auto;
+    // height: 200vw;
+
+    .home_heading {
+        margin-top: 160px;
+        text-align: center;
+        font-size: 81px;
+        font-weight: 500;
+        line-height: 81px;
+
+        .home_img_para {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .home_color1 {
+                color: #FF6625;
+                margin-left: 10px;
+                margin-right: 20px;
+            }
+        }
+
+        .home_color {
+            color: #FF6625;
+        }
+    }
+
+    .home_subpara {
+        text-align: center;
+        margin-top: 25px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .home_card {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        .home_img_card {
+            margin-top: 100px;
+            position: relative;
+            width: 600px;
+            aspect-ratio: 1.7;
+            height: 500px;
+
+            img {
+                position: absolute;
+                border-radius: 15px;
+                background-position: center;
+                background-size: contain;
+            }
+        }
+
+        .home_carsoule {
+            margin-top: 100px;
+            background-color: #fff8f4;
+            width: 450px;
+            height: 500px;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .testinomial_card {
+                background-color: #ffffff;
+                padding: 30px 25px;
+                border-radius: 5px;
+                transform: translateY(500px);
+                animation: top 5s ease-in-out infinite;
+
+                .testi_person {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 10px;
+                    line-height: 22px;
+                    margin-bottom: 20px;
+                }
+
+                .image_person {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #FF6625;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+
+                    img {
+                        position: absolute;
+                        border-radius: 100%;
+                    }
+                }
+
+                .testi_para {
+                    line-height: 26px;
+                    margin-bottom: 20px;
+                }
+
+                .social_icon {
+                    display: flex;
+                    gap: 10px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@keyframes top {
+    0% {
+
+        transform: translateY(-500px);
+    }
+
+    100% {
+
+        transform: translateY(500px);
+    }
+
+}
