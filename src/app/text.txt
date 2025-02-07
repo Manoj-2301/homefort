@@ -1,0 +1,51 @@
+
+<div className='listing_card'>
+                <div className='img_card'>
+                    <Image src='/building.avif'
+                        fill
+                        sizes='100vw'
+                        alt='altimg'
+                    />
+                    <div className='listing_sub_item'>
+                        <div className='lisiting_sub'>
+                            <p className='list_sub_option'>sale</p>
+                            <p className='list_sub_option'>industrial</p>
+                        </div>
+                        <div className='list_sub_option'><BsBookmarkDash />
+                        </div>
+                    </div>
+                </div>
+                <div className='lisitng_list'>
+                    <p className='lisitng_head'>Luxury Loft</p>
+                    <div className='listing_place'>
+                        <div className='lisiting_place_list'>
+                            <MdOutlineLocationOn />
+                            <p>Jersey City </p>
+                        </div>
+                        .
+                        <div className='lisiting_place_list'>
+                            <RiGalleryLine />
+                            <p>04</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p className='lisiting_info'>Nestled in a charming suburban area, this stunning home rests on a spacious lot, offering..</p>
+                    </div>
+                    <div className='availability_option'>
+                        <div className='lisiting_option'>
+                            <MdOutlineBed />
+                            <p>1 Room</p>
+                        </div>
+                        <div className='lisiting_option'>
+                            <MdOutlineBathtub />
+                            <p>2 Bathroom</p>
+                        </div>
+                        <div className='lisiting_option'>
+                            <p>600 ft</p>
+                        </div>
+                    </div>
+                    <div className='lisitng_price'>
+                        <p>$ 950,000</p>
+                    </div>
+                </div>
+            </div>

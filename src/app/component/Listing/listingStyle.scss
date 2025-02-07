@@ -1,0 +1,128 @@
+.listing {
+    max-width: 1217px;
+    margin: 0 auto;
+
+    .listing_heading {
+        text-align: center;
+
+        .listing_main {
+            color: #FF6625;
+            font-size: 40px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .listing_sub {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    }
+    .listing_container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .listing_card {
+        width: 350px;
+        cursor: pointer;
+
+        .img_card {
+            position: relative;
+            width: 350px;
+            aspect-ratio: 1.5;
+            overflow: hidden;
+            border-radius: 10px;
+            background-position: cover;
+            img {
+                position: absolute;
+                border-radius: 10px;
+                transition: all 0.25s ease-in;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+
+            .listing_sub_item {
+                position: absolute;
+                bottom: 0;
+                width: 350px;
+                padding: 15px;
+                display: flex;
+                justify-content: space-between;
+
+                .lisiting_sub {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+
+                    .list_sub_option {
+                        padding: 10px;
+                        background-color: white;
+                        border-radius: 10px;
+                        font-size: 12px;
+                    }
+
+                }
+                .list_sub_option {
+                    padding: 10px;
+                    background-color: white;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .lisitng_list {
+            padding: 10px;
+
+            .lisitng_head {
+                font-size: 18px;
+                margin-top: 10px;
+
+            }
+
+            .listing_place {
+                display: flex;
+                margin-top: 10px;
+                gap: 10px;
+                margin-bottom: 10PX;
+
+                .lisiting_place_list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                }
+            }
+
+            .lisiting_info {
+                font-size: 13px;
+                margin-bottom: 10px;
+            }
+
+            .availability_option {
+                display: flex;
+                gap: 10px;
+
+                .lisiting_option {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+
+            .lisitng_price {
+                font-size: 18px;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+        }
+    }
+}

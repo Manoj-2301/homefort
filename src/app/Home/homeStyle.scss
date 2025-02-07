@@ -2,7 +2,7 @@
     max-width: 1217px;
     margin: 0 auto;
     // height: 200vw;
-
+    
     .home_heading {
         margin-top: 160px;
         text-align: center;
@@ -26,13 +26,13 @@
             color: #FF6625;
         }
     }
-
     .home_subpara {
         text-align: center;
         margin-top: 25px;
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 24px;
+        padding: 10px;
     }
 
     .home_card {
@@ -40,7 +40,7 @@
         gap: 20px;
         align-items: center;
         justify-content: center;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
 
         .home_img_card {
             margin-top: 100px;
@@ -119,11 +119,6 @@
 
 
 
-
-
-
-
-
 @keyframes top {
     0% {
 
@@ -135,4 +130,177 @@
         transform: translateY(500px);
     }
 
+}
+
+@media only screen and (max-width:1024px) {
+    .main_home{
+        .home_card {
+            display: flex;
+            gap: 1px;  
+            flex-direction: column;       
+            padding: 10px;
+            .home_img_card {
+                margin-top: 100px;
+                position: relative;
+                width: 900px;
+                aspect-ratio: 1.7;    
+                img {
+                    position: absolute;
+                    border-radius: 15px;
+                    background-position: center;
+                    background-size: contain;
+                }
+            }
+    
+            .home_carsoule {
+                margin-top: 20px;
+                width: 900px;               
+                padding: 30px 250px;            
+                }
+            }
+        }
+    
+}
+@media only screen and (max-width:768px){
+    .main_home {
+        max-width: 1217px;
+        margin: 0 auto;
+    
+        .home_heading {
+            margin-top: 160px;
+            text-align: center;
+            font-size: 60px;
+            font-weight: 500;
+            line-height: 71px;          
+    
+            .home_color {
+                color: #FF6625;
+            }
+        }
+    
+      
+    
+        .home_card {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+    
+            .home_img_card {
+                margin-top: 100px;
+                position: relative;
+                width: 700px;
+                aspect-ratio: 1.7;
+                padding: 10PX;
+    
+            }
+    
+            .home_carsoule {
+                margin-top: 10px;                
+                width: 700px;                
+                padding:30px 150px;             
+                    
+            }
+        }
+    }
+}
+@media only screen and (max-width:425px){
+    .main_home {
+        max-width: 1217px;
+        margin: 0 auto;
+        // height: 200vw;
+    
+        .home_heading {
+            margin-top: 130px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 33px;
+    
+            .home_img_para {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    display: none;
+                }
+            }            
+        }
+    
+        .home_subpara {          
+            margin-top: 25px;
+            font-size: 14px;            
+        }
+    
+        .home_card {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+    
+            .home_img_card {
+                margin-top: 50px;
+                position: relative;
+                width: 400px;
+                height: 300px;    
+            }
+    
+            .home_carsoule {
+                margin-top: 10px;               
+                width: 400px;               
+                padding: 30px;
+                display: flex;
+                flex-direction: column;    
+                .testinomial_card {
+                    background-color: #ffffff;
+                    padding: 30px 25px;
+                    border-radius: 5px;
+                    transform: translateY(500px);
+                    animation: top 5s ease-in-out infinite;
+    
+                    .testi_person {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        align-items: center;
+                        gap: 10px;
+                        line-height: 22px;
+                        margin-bottom: 20px;
+                    }
+    
+                    .image_person {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #FF6625;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+    
+                        img {
+                            position: absolute;
+                            border-radius: 100%;
+                        }
+                    }
+    
+                    .testi_para {
+                        line-height: 26px;
+                        margin-bottom: 20px;
+                    }
+    
+                    .social_icon {
+                        display: flex;
+                        gap: 10px;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+    
 }

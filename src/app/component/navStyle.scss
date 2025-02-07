@@ -1,17 +1,21 @@
 .nav {
-    max-width: 1217px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px 56px;
-    position: fixed;
+   
+     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1000;
     &.scrolled {
         background-color: rgb(255, 255, 255); 
+      }
+      .navbar{
+        max-width: 1217px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 56px;
+
       }
     .nav_brand {    
         display: flex;
@@ -69,4 +73,31 @@
         }
     }
 
+}
+
+@media only screen and (max-width  :425px){
+    .nav {
+         padding: 24px 10px;
+        .nav_brand { 
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .nav_list {
+            display: none;        
+        }
+        .btn {
+            display: flex;
+            gap: 10px;
+            margin-right: 16px;
+            .signUp_btn {               
+                padding: 8px 10px;               
+                font-size: 14px; 
+            }    
+            .login_btn {
+                padding: 8px 10px;
+                font-size: 14px;
+                letter-spacing: 0.03rem;                
+            }
+        }    
+    }
 }

@@ -4,6 +4,10 @@ import Image from 'next/image'
 import "./homeStyle.scss"
 import { FaInstagram } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
+import Perk from '../component/perkComponent/Perk';
+import Dream from"../component/DreamComponent/dream"
+import Listing from '../component/Listing/Listing';
+import Feature from '../component/Feature/Feature';
 
 
 const page = () => {
@@ -18,11 +22,12 @@ const page = () => {
                 src="/Logomini.avif"
                 width={100}
                 height={60}
+                alt='altimg'
               /></p>
-            <p > <span className='home_color'>property</span> with Homfort</p>
+            <p  className='home_img_para_two'> <span className='home_color'>property</span> with <span className='mobile_media'>Homfort</span></p>
           </div>
           <div className='home_subpara'>
-            <p>We believe there's a perfect home for everybody, no matter the budget. <br />That's why we always find the best homes for your budget.</p>
+            <p>We believe there's a perfect home for everybody, no matter the budget.<br/> That's why we always find the best homes for your budget</p>
           </div>
           <div className='home_card'>
             <div className='home_img_card'>
@@ -30,7 +35,7 @@ const page = () => {
                 src="/cardImg.avif"
                 fill
                 sizes='100vw'
-                alt=''
+                alt='card img'
               />
             </div>
             <div className='home_carsoule'>
@@ -41,7 +46,7 @@ const page = () => {
                     src="/person.avif"
                     fill
                     sizes='100vw'
-                     alt=''
+                     alt='person'
                    />
                   </div>
                   <div>
@@ -65,7 +70,7 @@ const page = () => {
                     src="/person2.avif"
                     fill
                     sizes='100vw'
-                    alt=''
+                    alt='person'
                    />
                   </div>
                   <div>
@@ -104,6 +109,10 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Perk/>
+      <Dream/>
+      <Listing/>
+      <Feature/>
     </div>
   )
 }
