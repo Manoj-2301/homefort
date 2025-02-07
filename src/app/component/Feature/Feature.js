@@ -15,7 +15,7 @@ const Feature = () => {
                 <div className='feature_home'>
                     <div className='img_feature'>
                         <Image 
-                        src="/building2.avif"
+                        src="/building3.avif"
                         fill
                         sizes=''                        
                         alt='alt'/>

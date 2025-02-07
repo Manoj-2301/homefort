@@ -8,6 +8,7 @@ import Perk from '../component/perkComponent/Perk';
 import Dream from"../component/DreamComponent/dream"
 import Listing from '../component/Listing/Listing';
 import Feature from '../component/Feature/Feature';
+import Getmore from '../component/Getmore/Getmore';
 
 
 const page = () => {
@@ -113,6 +114,7 @@ const page = () => {
       <Dream/>
       <Listing/>
       <Feature/>
+      <Getmore/>
     </div>
   )
 }
