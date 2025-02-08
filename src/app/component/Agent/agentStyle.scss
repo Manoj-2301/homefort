@@ -101,7 +101,8 @@
                         padding: 12px 18px;
                         border: none;
                         border-radius: 10px;
-                        background-color: #FF6625;
+                        background: linear-gradient(rgb(255, 130, 77) 0%, rgb(255, 102, 37) 100%);
+                        box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 1px 1px inset, rgba(255, 102, 37, 0.85) 0px inset;
                         border-top: 1px solid white;
                         color: white;
                         font-size: 16px;

@@ -61,9 +61,7 @@
                     font-weight: 500;    
                 }
             }    
-            .perk_ad {                
-                .perk1 {                    
-                }    
+            .perk_ad {   
                 .perk_ad_para {
                     text-align: center;
                     margin-top: 20px;    
@@ -76,4 +74,26 @@
             }
         }
     }    
+}
+
+@media only screen and (max-width:768px){
+    .Perk {
+        background-color: #fff8f4;
+        padding: 32px;
+    
+        .perk_container {
+            .perk_para {
+                margin-top: 100px;
+                text-align: center;  
+            }
+    
+            .perk_ad {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    }
+      
 }

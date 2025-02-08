@@ -264,11 +264,7 @@
 }
 @media only screen and (max-width:768px){
     .listing {
-        max-width: 768px;
-        margin: 0 auto;
-        margin-bottom: 90px;
-    
-       
+        max-width: 768px;    
      .listing_heading {
             .listing_main {
                 color: #FF6625;
@@ -336,6 +332,97 @@
                         border-radius: 10px;
                     }
                 }
+            }
+    
+            .lisitng_list {
+                padding: 10px;
+    
+                .lisitng_head {
+                    font-size: 18px;
+                    margin-top: 10px;
+    
+                }
+    
+                .listing_place {
+                    display: flex;
+                    margin-top: 10px;
+                    gap: 10px;
+                    margin-bottom: 10PX;
+    
+                    .lisiting_place_list {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+    
+                .lisiting_info {
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+    
+                .availability_option {
+                    display: flex;
+                    gap: 10px;
+    
+                    .lisiting_option {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 5px;
+                    }
+                }
+    
+                .lisitng_price {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:425px){
+    .listing {
+        max-width: 425px;
+        margin: 0 auto;
+        margin-bottom: 90px;
+    
+       
+     .listing_heading {
+            .listing_main {
+                color: #FF6625;
+                font-size: 25px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+    
+            .listing_sub {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+        .listing_container{
+            grid-template-columns: auto  ;
+            
+        }
+    
+        .listing_card {
+            width: 350px;
+            cursor: pointer;    
+            .img_card {
+                position: relative;
+                width: 350px;
+                aspect-ratio: 1.5;
+                overflow: hidden;
+                border-radius: 10px;
+                object-fit: cover;
+                object-position: center;  
+                .listing_sub_item {
+                    width: 350px; 
+                }
+               
             }
     
             .lisitng_list {

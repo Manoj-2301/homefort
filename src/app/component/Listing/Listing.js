@@ -1,13 +1,20 @@
-import React from 'react'
+"use client"
+import {useState} from 'react'
 import './listingStyle.scss'
 import Image from 'next/image'
 import { MdOutlineBathtub, MdOutlineBed, MdOutlineLocationOn } from "react-icons/md";
 import { RiGalleryLine } from "react-icons/ri";
 import { BsBookmarkDash } from "react-icons/bs";
+import Overlay from "../ModalComponent/modal"
 
 
 
 const Listing = () => {
+    const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+    
+        const handleAgentClick = () => {
+            setIsOverlayOpen(true);
+        };
     const listings = [
         {
             title: "Luxury Loft",
@@ -80,7 +87,7 @@ const Listing = () => {
             </div>            
             <div className='listing_container'>
                 {listings.map((listing, index) => (
-                    <div className='listing_card' key={index}>
+                    <div className='listing_card' key={index} onClick={handleAgentClick}>
                         {/* Image Section */}
                         <div className='img_card'>
                             <Image src={listing.image} fill sizes='100vw' alt={listing.title} />
@@ -131,6 +138,7 @@ const Listing = () => {
                     </div>
                 ))}
             </div>
+            {isOverlayOpen && <Overlay/>}
         </div>
     )
 }

@@ -135,3 +135,44 @@
         }
     }
 }
+@media only screen and (max-width:768px){
+    .feature_bg {
+        background-color: #fff8f4;
+    
+        .Feature {
+            max-width: 768px;
+            .feature_home {
+                display: grid;
+                grid-template-columns: auto ;
+                margin-left:20px;             
+            }
+    
+            .img_feature {
+                position: relative;
+                width: 690px;
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:425px){
+    .feature_bg {
+        background-color: #fff8f4;
+    
+        .Feature {
+            max-width: 425px;
+            .feature_home {
+                display: grid;
+                grid-template-columns: auto ;              
+            }
+    
+            .img_feature {
+                position: relative;
+                width: 390px;
+                height: 300px;
+            }
+        }
+    }
+    
+}

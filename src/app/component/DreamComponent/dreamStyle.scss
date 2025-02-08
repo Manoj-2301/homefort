@@ -207,3 +207,107 @@
     }
     
 }
+@media only screen and (max-width:768px){
+    .dream_main {
+        max-width: 1217px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        // overflow: hidden;
+        margin-top: 100px;
+        margin-bottom: 150px;
+        .first_grid_dream{
+            width: 250px;
+            .first_para{
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 40px;
+                margin-bottom: 20px;
+                .dream_color{
+                    color: #FF6625;
+                }
+            }
+            .dream_img{
+                position: relative;
+                width:250px;
+                aspect-ratio: 0.8;
+             
+                img{
+                    position: absolute;
+                    border-radius: 10px;
+                }
+                .first_grid_client{
+                    position: absolute;
+                    bottom: -30px;
+                    left:0;
+                    background-color: #fff8f4;
+                    padding: 10px 15px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .video{
+           
+            video{
+                border-radius: 10px;
+                max-width: 110%;
+                height: 455px;
+            }
+           
+        }
+        .dream_third_grid {
+            background-color: #fff8f4;
+            width: 400px;
+            padding: 22px;
+            border-radius: 10px;
+            .third_para{
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                margin-bottom: 60px;
+            }
+            .dream_grid{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 50px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                .sold_dream_ad{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                   
+                    .number{
+                        font-size: 40px;
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .dream_list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-left: 20px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+            }
+            .btn{
+                background-color: black;
+                color: white;
+                padding: 12px 10px;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        hr{
+            border: none;
+            border-top: 1px solid rgba(196, 196, 196, 0.815);
+        }
+    }
+}

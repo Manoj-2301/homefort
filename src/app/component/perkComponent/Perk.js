@@ -16,6 +16,8 @@ const Perk = () => {
               <Image src="/perk1.avif"
               width={150}
               height={150}
+              alt='jj'
+
               />
             </div>
             <div className='perk_ad_para'>
@@ -28,6 +30,7 @@ const Perk = () => {
               <Image src="/perk2.avif"
               width={150}
               height={150}
+              alt='jj'
               />
             </div>
             <div className='perk_ad_para'>
@@ -40,6 +43,8 @@ const Perk = () => {
               <Image src="/perk3.avif"
               width={150}
               height={150}
+              alt='jj'
+
               />
             </div>
             <div className='perk_ad_para'>
