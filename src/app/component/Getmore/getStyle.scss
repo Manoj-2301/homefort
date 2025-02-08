@@ -1,35 +1,41 @@
-.bg{
+.bg {
     background-image: url(./overlay.avif);
     width: 100vw;
     height: auto;
     background-position: center;
     background-size: cover;
-    background-repeat: repeat;
-    .get_info{
+    background-repeat: no-repeat;
+    padding: 10px;
+
+    .get_info {
         max-width: 1217px;
         margin: 0 auto;
         padding: 1px;
         display: grid;
         grid-template-columns: auto auto;
-        
-        .get_info_heading{
+
+        .get_info_heading {
             margin-top: 100px;
             color: white;
-            .get_info_head{
+
+            .get_info_head {
                 color: white;
                 font-size: 40px;
                 font-weight: 500;
                 margin-bottom: 20px;
             }
-            p{
+
+            p {
                 font-size: 18px;
                 margin-bottom: 20px;
             }
-            .btn{
+
+            .btn {
                 border: none;
                 display: flex;
                 gap: 20px;
-                .btn_first{
+
+                .btn_first {
                     padding: 12px 20px;
                     font-size: 18px;
                     font-weight: 500;
@@ -39,7 +45,8 @@
                     border: 2px solid white;
                     border-radius: 10px;
                 }
-                .btn_second{
+
+                .btn_second {
                     padding: 12px 20px;
                     font-size: 18px;
                     font-weight: 500;
@@ -50,18 +57,37 @@
                 }
             }
         }
-        .get_info_img{
+
+        .get_info_img {
             margin-bottom: 100px;
         }
-        .img_get{
+
+        .img_get {
             margin-top: 100px;
             position: relative;
             width: 750px;
             height: 550px;
             left: 100px;
-            img{
+
+            img {
                 position: absolute;
                 border-radius: 15px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    .bg {
+
+        .get_info {
+            max-width: 1024px;
+            display: grid;
+            grid-template-columns: auto;
+
+            .get_info_heading {
+                margin-left: 100px;
+                margin-right: auto;   
             }
         }
     }
